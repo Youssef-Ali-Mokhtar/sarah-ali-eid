@@ -2,37 +2,248 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro-img{
+  max-width:50%;
+  /* height: fit-content; */
 }
+
+a{
+  text-decoration: none;
+  padding:0px;
+  margin:0px;
+  color:white;
+  font-family: Cairo;
+}
+
+.intro-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+}
+
+.intro-text h1{
+  font-size: 48px;
+  color:rgb(25,118,210);
+}
+
+.intro-text h3{
+  font-size: 24px;
+  font-weight: 300;
+  max-width:500px;
+}
+
+.intro-section{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  height:50px;
+  width:50px;
+  cursor: pointer;
+}
+
+.qualifications-section{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  padding: 40px 0px;
+
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+.qualifications-img{
+  max-width:50%;
+  /* height: fit-content; */
+}
+
+.qualifications-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qualifications-text h3{
+  font-size: 24px;
+  font-weight: 700;
+  color:rgb(25,118,210);
+  padding-bottom: 20px;
+}
+
+.card{
+  width: 200px;
+  height: 100px;
+  margin:10px;
+  padding:5px 10px;
+  /* border: 1px solid lightgray; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-box-shadow: -1px 1px 19px -3px rgba(174,214,214,1);
+  -moz-box-shadow: -1px 1px 19px -3px rgba(174,214,214,1);
+  box-shadow: -1px 1px 19px -3px rgba(174,214,214,1);
+}
+
+.card p{
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(128, 84, 103);
+}
+
+.qualifications-title{
+  max-width: 500px;
+}
+
+.qualifications-cards{
+  display: flex;
+  justify-content: space-around;
+  max-width: 500px;
+}
+
+.cards-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact{
+  width: 100%;
+  height: 300px;
+  background-color: rgb(25,118,210);
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon-wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-icon-text{
+  font-size:18px;
+  color:white;
+}
+
+.contact-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 899px) {
+  .intro-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro-img{
+    max-width:80%;
+  }
+
+  .intro-text h1{
+    font-size: 42px;
+  }
+  
+  .intro-text h3{
+    font-size: 21px;
+  }
+
+  .qualifications-section{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    width: 150px;
+    height: 75px;
+    margin:5px;
+    padding:4px 8px;
+  }
+
+  .qualifications-img{
+    margin:10px;
+    max-width:80%;
+  }
+
+  .qualifications-text h3{
+    font-size: 18px;
+    padding:10px;
+  }
+  .card p{
+    font-size: 18px;
+  }
+
+}
+
+.contact-icon{
+  padding:'40px';
+  transform: 'scale(1.8)';
+  cursor:'pointer';
+  color:'white';
+}
+
+.contact-icon-text{
+  font-size:'18px';
+  color:'white';
+}
+
+@media only screen and (max-width: 399px) {
+  .intro-text h1{
+    font-size: 36px;
+  }
+  
+  .intro-text h3{
+    font-size: 18px;
+  }
+
+  .intro-img{
+    min-width:90%;
+    height: fit-content;
+  }
+
+  .qualifications-text h3{
+    font-size: 14px;
+  }
+
+  .card{
+    width: 100px;
+    height: 50px;
+    margin:5px;
+    padding:2px 4px;
+  }
+
+  .card p{
+    font-size: 12px;
+  }
+
+  .qualifications-img{
+    min-width:90%;
+    height: fit-content;
+  }
+
+  .contact-icon-text{
+    font-size: 12px;
+  }
+
+}
+
+
